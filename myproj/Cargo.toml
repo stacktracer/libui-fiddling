@@ -1,0 +1,10 @@
+[package]
+name = "myproj"
+version = "0.1.0"
+authors = ["Mike Hogye <stacktracer@gmail.com>"]
+build = "build.rs"
+
+[dependencies]
+
+[dependencies.ui]
+path = "../libui-rs/ui"

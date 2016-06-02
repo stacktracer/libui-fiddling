@@ -1,0 +1,39 @@
+[root]
+name = "myproj"
+version = "0.1.0"
+dependencies = [
+ "ui 0.1.0",
+]
+
+[[package]]
+name = "bitflags"
+version = "0.7.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "libc"
+version = "0.2.11"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "make-cmd"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "ui"
+version = "0.1.0"
+dependencies = [
+ "bitflags 0.7.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "libc 0.2.11 (registry+https://github.com/rust-lang/crates.io-index)",
+ "ui-sys 0.1.0",
+]
+
+[[package]]
+name = "ui-sys"
+version = "0.1.0"
+dependencies = [
+ "libc 0.2.11 (registry+https://github.com/rust-lang/crates.io-index)",
+ "make-cmd 0.1.0 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
